@@ -42,3 +42,11 @@ def dot_product(v1, v2):
     if len(v1) != len(v2):
         return None
     return sum(x * y for x, y in zip(v1, v2))
+def heron_area(a, b, c):
+    '''Обчислює площу трикутника за трьома сторонами.'''
+    if a + b <= c or a + c <= b or b + c <= a:
+        return None 
+    
+    p = (a + b + c) / 2
+    area = (p * (p - a) * (p - b) * (p - c)) ** 0.5
+    return round(area, 2)
