@@ -1,5 +1,5 @@
-from utils import factorial
+# Додаємо is_prime через кому
+from utils import factorial, is_prime
 
-# Перевіряємо, як працює функція Богдана
-print(Факторіал числа 5 дорівнює:, factorial(5))
- 
+print('Факторіал числа 5:', factorial(5))
+print('Чи є число 17 простим?', is_prime(17))
