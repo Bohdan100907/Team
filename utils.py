@@ -14,3 +14,8 @@ def is_prime(n):
         if n % i == 0:
             return False
     return True
+def gcd(a, b):
+    '''Знаходить найбільший спільний дільник двох чисел.'''
+    while b != 0:
+        a, b = b, a % b
+    return a
