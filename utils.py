@@ -37,3 +37,8 @@ def is_power_of_five(n):
     while n % 5 == 0:
         n //= 5
     return n == 1
+def dot_product(v1, v2):
+    '''Обчислює скалярний добуток двох векторів однакової довжини.'''
+    if len(v1) != len(v2):
+        return None
+    return sum(x * y for x, y in zip(v1, v2))
